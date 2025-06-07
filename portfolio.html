@@ -318,6 +318,16 @@
             </div>
         </header>
 
+        <!-- Experience Section -->
+        <section class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="education-item">
+                <h3 class="education-title">Software Engineer Intern</h3>
+                <p class="education-details">Opkey | Noida, India</p>
+                <p class="education-description">Current Internship</p>
+            </div>
+        </section>
+
         <!-- Education Section -->
         <section class="section">
             <h2 class="section-title">Education</h2>
@@ -400,6 +410,7 @@
                         <span class="skill-tag">Grok</span>
                         <span class="skill-tag">Gemini</span>
                         <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">LangChain</span>
                         <span class="skill-tag">Prompt Engineering</span>
                         <span class="skill-tag">Computer Vision</span>
                     </div>
@@ -432,10 +443,6 @@
         <section class="section">
             <h2 class="section-title">Achievements & Activities</h2>
             <div class="achievements-list">
-                <div class="achievement-item">
-                    <h3 class="achievement-title">Codeforces</h3>
-                    <p>Rated 1200+ (Pupil) - Active participant in coding contests</p>
-                </div>
                 <div class="achievement-item">
                     <h3 class="achievement-title">LeetCode</h3>
                     <p>Solved 100+ problems focusing on algorithms and data structures</p>
@@ -502,7 +509,7 @@
                 const newY = currentY + (floatDirection * 2);
                 if (Math.abs(newY) > 10) floatDirection *= -1;
                 
-                profileImg.style.transform = translateY(${newY}px);
+                profileImg.style.transform = `translateY(${newY}px)`;
             }, 100);
         });
     </script>
